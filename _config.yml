@@ -22,11 +22,11 @@ favicon: https://github.com/lemonchann/lemonchann.github.io/raw/master/images/fa
 navigation:
 
   - name: About Me
-    url: /
+    url: /about
   - name: Content
     url: /archive
   - name: Posts
-    url: /posts
+    url: /
   - name: Interests
     url: /tags
 
