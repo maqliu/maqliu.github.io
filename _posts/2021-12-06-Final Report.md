@@ -108,6 +108,8 @@ Our next step was to cluster our dataset so that we could group movies with simi
 
 This clustering analysis was performed on the entire dataset and using the PCA components (80% variance retained). We used the elbow method to pick the optimal number of clusters (10) in our K-Means algorithm. 
 
+
+
 ## Results and Discussions
 
 ### Dimensionality Reduction
