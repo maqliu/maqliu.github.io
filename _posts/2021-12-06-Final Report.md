@@ -16,7 +16,7 @@ Rochisman Datta, Joe Palumbo, Parisa Davoodi, Manqiu Liu, Nicholas Gonzalez
         <ul>
           <li><a href="#dimensionality-reduction">Dimensionality Reduction</a></li>
           <li><a href="#supervised-model">Supervised Model</a></li>
-          <li><a href="#unsupervised-model">Supervised Model</a></li>
+          <li><a href="#unsupervised-model">Unsupervised Model</a></li>
       </ul>
     </li>
     <li><a href="#references">References</a></li>
