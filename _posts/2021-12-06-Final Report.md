@@ -135,6 +135,8 @@ From the line chart below, we could see the relationship between number of compo
 
 ### Supervised Model 
 
+#### Modeling
+
 The random forest classification model yielded a ROC-AUC score of 0.754, which is plotted below. This means that our model has a 75.4% chance of classifying successful movies as successful. As we look further into the confusion matrix, we determine that the model’s accuracy is 0.707 and the precision is 0.671. 
 
 <figure>
@@ -194,6 +196,29 @@ Finally, we ran the neural network model on our test dataset, which yielded a RO
 
 Based on the analysis above, the ensemble methods improved upon the initial Random Forest classification model. However, the Neural Network proved to be the best at classifying successful movies as successful. 
 
+#### Further Testing with New Movies
+
+To further test our model, we ran 29 movies from 2017 through our Neural Network model. Our dataset involved movies up to 2016, so we chose 2017 to simulate predicting the success of new movies. The model predicted 72% of the movies correctly, which is displayed in the tables below. For each movie, the tables show the ground truths for vote average and the associated binary classifier. The column “Predict Prob” shows the derived likelihood that the movie is successful. Finally, we used a probability threshold of 0.50 to classify our predictions as successful or unsuccessful. 
+
+<figure>
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Successfully predicted movies.png?raw=true" width="600"/>
+    </kbd>
+  </p>
+  <p align="center">Successfully predicted movies</p>
+</figure>
+
+<figure>
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Incorrectly predicted movies.png?raw=true" width="600"/>
+    </kbd>
+  </p>
+  <p align="center">Incorrectly predicted movies</p>
+</figure>
+
+
 ### Unsupervised Model 
 
 #### Clustering
@@ -237,25 +262,6 @@ To analyze the actors that appear in a cluster, we calculated the following metr
 
 From this example, if we were to make a new science fiction movie, we could cast Sigourney Weaver because her science fiction movies perform better on average. If Weaver cannot be cast, Arnold Schwarzenegger would be the next ideal choice. 
 
-To further test our model, we ran 29 movies from 2017 through our Neural Network model. Our dataset involved movies up to 2016, so we chose 2017 to simulate predicting the success of new movies. The model predicted 72% of the movies correctly, which is displayed in the tables below. For each movie, the tables show the ground truths for vote average and the associated binary classifier. The column “Predict Prob” shows the derived likelihood that the movie is successful. Finally, we used a probability threshold of 0.50 to classify our predictions as successful or unsuccessful. 
-
-<figure>
-  <p align="center">
-    <kbd>
-      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Successfully predicted movies.png?raw=true" width="600"/>
-    </kbd>
-  </p>
-  <p align="center">Successfully predicted movies</p>
-</figure>
-
-<figure>
-  <p align="center">
-    <kbd>
-      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Incorrectly predicted movies.png?raw=true" width="600"/>
-    </kbd>
-  </p>
-  <p align="center">Incorrectly predicted movies</p>
-</figure>
 
 ## References
 
