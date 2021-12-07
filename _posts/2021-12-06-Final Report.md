@@ -10,15 +10,15 @@ Rochisman Datta, Joe Palumbo, Parisa Davoodi, Manqiu Liu, Nicholas Gonzalez
   <ol>
     <li><a href="#background">Background</a></li>
     <li><a href="#problem-definition">Problem Definition</a></li>
-    <li><a href="#data-collection-feature-engineering">Data Collection & Feature Engineering</a></li>
+    <li><a href="#data-collection-and-feature-engineering">Data Collection & Feature Engineering</a></li>
     <li><a href="#method">Method</a></li>
-    <li><a href="#Results-and-Discussions">Results and Discussions</a>
+    <li><a href="#results-and-discussions">Results and Discussions</a>
         <ul>
-          <li><a href="#Dimensionality-Reduction">Dimensionality Reduction</a></li>
+          <li><a href="#dimensionality-reduction">Dimensionality Reduction</a></li>
           <li><a href="#supervised-model">Supervised Model</a></li>
+          <li><a href="#unsupervised-model">Supervised Model</a></li>
       </ul>
     </li>
-    <li><a href="#proposal-timeline">Proposal Timeline</a></li>
     <li><a href="#references">References</a></li>
   </ol>
 </details>
@@ -140,7 +140,7 @@ The random forest classification model yielded a ROC-AUC score of 0.754, which i
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Random Forest Model ROC Curve.png?raw=true" width="400"/>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Random Forest Model ROC Curve.png?raw=true" width="300"/>
     </kbd>
   </p>
   <p align="center">Random Forest Model ROC Curve</p>
@@ -151,7 +151,7 @@ When we ran the XG Boost model, we improved the ROC-AUC score to 0.783, which is
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/XG Boost Model ROC Curve.png?raw=true" width="400"/>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/XG Boost Model ROC Curve.png?raw=true" width="300"/>
     </kbd>
   </p>
   <p align="center">XG Boost Model ROC Curve</p>
@@ -162,7 +162,7 @@ When we ran the Light GBM model, we improved the ROC-AUC score to 0.77, which is
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/LightGBM Model ROC Curve.png?raw=true" width="400"/>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/LightGBM Model ROC Curve.png?raw=true" width="300"/>
     </kbd>
   </p>
   <p align="center">LightGBM Model ROC Curve</p>
@@ -174,7 +174,7 @@ When we executed the Neural Network, we improved the ROC-AUC score to 0.784, whi
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Neural Network Validation ROC Curve.png?raw=true" width="400"/>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Neural Network Validation ROC Curve.png?raw=true" width="300"/>
     </kbd>
   </p>
   <p align="center">Neural Network Validation ROC Curve</p>
@@ -186,7 +186,7 @@ Finally, we ran the neural network model on our test dataset, which yielded a RO
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Neural Network Test ROC Curve.png?raw=true" width="400"/>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Neural Network Test ROC Curve.png?raw=true" width="300"/>
     </kbd>
   </p>
   <p align="center">Neural Network Test ROC Curve</p>
