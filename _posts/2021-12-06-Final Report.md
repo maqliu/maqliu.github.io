@@ -111,7 +111,7 @@ This clustering analysis was performed on the entire dataset and using the PCA c
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Elbow Method Plot for K-Means Clustering.png?raw=true" width="300"/>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Elbow Method Plot for K-Means Clustering.png?raw=true" width="400"/>
     </kbd>
   </p>
   <p align="center">Elbow Method Plot for K-Means Clustering</p>
@@ -127,7 +127,7 @@ From the line chart below, we could see the relationship between number of compo
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/PCA Explained Variance Cumulative Sum Curve.png?raw=true" width="700"/>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/PCA Explained Variance Cumulative Sum Curve.png?raw=true" width="600"/>
     </kbd>
   </p>
   <p align="center">PCA Explained Variance Cumulative Sum Curve</p>
@@ -140,7 +140,7 @@ The random forest classification model yielded a ROC-AUC score of 0.754, which i
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Random Forest Model ROC Curve.png?raw=true" width="700"/>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Random Forest Model ROC Curve.png?raw=true" width="400"/>
     </kbd>
   </p>
   <p align="center">Random Forest Model ROC Curve</p>
@@ -151,7 +151,7 @@ When we ran the XG Boost model, we improved the ROC-AUC score to 0.783, which is
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/XG Boost Model ROC Curve.png?raw=true" width="700"/>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/XG Boost Model ROC Curve.png?raw=true" width="400"/>
     </kbd>
   </p>
   <p align="center">XG Boost Model ROC Curve</p>
@@ -162,7 +162,7 @@ When we ran the Light GBM model, we improved the ROC-AUC score to 0.77, which is
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/LightGBM Model ROC Curve.png?raw=true" width="700"/>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/LightGBM Model ROC Curve.png?raw=true" width="400"/>
     </kbd>
   </p>
   <p align="center">LightGBM Model ROC Curve</p>
@@ -174,7 +174,7 @@ When we executed the Neural Network, we improved the ROC-AUC score to 0.784, whi
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Neural Network Validation ROC Curve.png?raw=true" width="700"/>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Neural Network Validation ROC Curve.png?raw=true" width="400"/>
     </kbd>
   </p>
   <p align="center">Neural Network Validation ROC Curve</p>
@@ -186,7 +186,7 @@ Finally, we ran the neural network model on our test dataset, which yielded a RO
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Neural Network Test ROC Curve.png?raw=true" width="700"/>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Neural Network Test ROC Curve.png?raw=true" width="400"/>
     </kbd>
   </p>
   <p align="center">Neural Network Test ROC Curve</p>
@@ -212,7 +212,7 @@ As we investigated each cluster, we determined that they were approximately segr
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Cluster Metric Table for Genres.png?raw=true" width="700"/>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Cluster Metric Table for Genres.png?raw=true" width="600"/>
     </kbd>
   </p>
   <p align="center">Cluster Metric Table for Genres</p>
@@ -229,7 +229,7 @@ To analyze the actors that appear in a cluster, we calculated the following metr
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Cluster Metric Table for Actors.png?raw=true" width="700"/>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Cluster Metric Table for Actors.png?raw=true" width="600"/>
     </kbd>
   </p>
   <p align="center">Cluster Metric Table for Actors</p>
@@ -242,7 +242,7 @@ To further test our model, we ran 29 movies from 2017 through our Neural Network
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Successfully predicted movies.png?raw=true" width="700"/>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Successfully predicted movies.png?raw=true" width="600"/>
     </kbd>
   </p>
   <p align="center">Successfully predicted movies</p>
@@ -251,7 +251,7 @@ To further test our model, we ran 29 movies from 2017 through our Neural Network
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Incorrectly predicted movies.png?raw=true" width="700"/>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Incorrectly predicted movies.png?raw=true" width="600"/>
     </kbd>
   </p>
   <p align="center">Incorrectly predicted movies</p>
