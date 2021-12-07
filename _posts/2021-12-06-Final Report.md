@@ -52,55 +52,55 @@ We first split the data into training (80%), validation (10%), and test data (10
 
 Next, we built the following supervised models to classify movies as successful or not successful; our target variable in all these cases was vote average rating. Below we describe the models used and method for tuning the parameters 
 
-Random Forest - We experimented with different combinations of values to optimize the following hyperparameters for this tree model: 
+1. Random Forest - We experimented with different combinations of values to optimize the following hyperparameters for this tree model: 
 
-n_estimators = 100 
+   * n_estimators = 100 
 
-The number of trees in the forest 
+     * The number of trees in the forest 
 
-max_depth = 20 
+   * max_depth = 20 
 
-The maximum depth of a tree 
+     * The maximum depth of a tree 
 
-max_features = 100 
+   * max_features = 100 
 
-The number of features to consider when finding the optimal split 
+     * The number of features to consider when finding the optimal split 
 
-XG Boost - We experimented with different combinations of values to optimize the following hyperparameters of this ensemble method: 
+2. XG Boost - We experimented with different combinations of values to optimize the following hyperparameters of this ensemble method: 
 
-reg_lambda = 0.05 
+   * reg_lambda = 0.05 
 
-L2 regularization term on weights 
+     * L2 regularization term on weights 
 
-subsample = 0.8 
+   * subsample = 0.8 
 
-Ratio of training instance subsamples 
+     * Ratio of training instance subsamples 
 
-learning_rate = 0.1 
+   * learning_rate = 0.1 
 
-Weighting factor for the corrections by new trees when added to the model 
+     * Weighting factor for the corrections by new trees when added to the model 
 
-max_depth = 7 
+   * max_depth = 7 
 
-LightGBM - We used a grid search to optimize the following hyperparameters for this next ensemble method: 
+3. LightGBM - We used a grid search to optimize the following hyperparameters for this next ensemble method: 
 
-reg_alpha = 0.03 
+   * reg_alpha = 0.03 
 
-L1 regularization term on weights 
+     * L1 regularization term on weights 
 
-num_leaves = 80 
+   * num_leaves = 80 
 
-Maximum tree leaves for base learners 
+     * Maximum tree leaves for base learners 
 
-min_child_samples = 50 
+   * min_child_samples = 50 
 
-Minimum number of data points required in a leaf 
+     * Minimum number of data points required in a leaf 
 
-learning_rate = 0.05 
+   * learning_rate = 0.05 
 
-max_depth = 20 
+     * max_depth = 20 
 
-Neural Network - We built a 2-layer Neural network with two dense layers, 110 neurons (1st layer) and 30 neurons (2nd layer). We used the “Relu” activation function. We used Dropout layers to mitigate the effect of overfitting. We tuned hyper parameters by running a for loop and finding the highest accuracy scores given by each parameter. 
+3. Neural Network - We built a 2-layer Neural network with two dense layers, 110 neurons (1st layer) and 30 neurons (2nd layer). We used the “Relu” activation function. We used Dropout layers to mitigate the effect of overfitting. We tuned hyper parameters by running a for loop and finding the highest accuracy scores given by each parameter. 
 
 We then chose the best supervised model from the above methods based on performance on the validation dataset, and calculated final performance based on the test dataset.  
 
@@ -144,23 +144,23 @@ Based on the analysis above, the ensemble methods improved upon the initial Rand
 
 As we investigated each cluster, we determined that they were approximately segregated by movie genre. We calculated the following metrics to characterize a cluster: 
 
-Cluster_perc: percentage of movies in a cluster that fall within a genre 
+   * Cluster_perc: percentage of movies in a cluster that fall within a genre 
 
-Total_perc: total percentage of a genre within the original dataset 
+   * Total_perc: total percentage of a genre within the original dataset 
 
-Compare: ratio of cluster_perc to total_perc 
+   * Compare: ratio of cluster_perc to total_perc 
 
-Cluster_in_total_perc: ratio of the occurrences of a genre in a cluster to the total occurrence of that genre within the original dataset 
+   * Cluster_in_total_perc: ratio of the occurrences of a genre in a cluster to the total occurrence of that genre within the original dataset 
 
 
 
 To analyze the actors that appear in a cluster, we calculated the following metrics: 
 
-Actor_vote_avg: average vote average for the movies in which an actor was present in a cluster 
+   * Actor_vote_avg: average vote average for the movies in which an actor was present in a cluster 
 
-Cluster_vote_avg: total average vote average of all movies in a cluster 
+   * Cluster_vote_avg: total average vote average of all movies in a cluster 
 
-Vote_avg_diff_pct: percentage difference between actor_vote_avg and cluster_vote_avg 
+   * Vote_avg_diff_pct: percentage difference between actor_vote_avg and cluster_vote_avg 
 
 
 
@@ -169,37 +169,6 @@ From this example, if we were to make a new science fiction movie, we could cast
 To further test our model, we ran 29 movies from 2017 through our Neural Network model. Our dataset involved movies up to 2016, so we chose 2017 to simulate predicting the success of new movies. The model predicted 72% of the movies correctly, which is displayed in the tables below. For each movie, the tables show the ground truths for vote average and the associated binary classifier. The column “Predict Prob” shows the derived likelihood that the movie is successful. Finally, we used a probability threshold of 0.50 to classify our predictions as successful or unsuccessful. 
 
 
-## Proposal Timeline
-
-- Video for Proposal – Oct 3rd 
-
-  - PowerPoint – Parisa, Nick 
-
-  - Voice-over – Joe and Manqiu 
-
-  - Video Editing – Rochisman  
-
-- Submit proposal – Oct 7th 
-
-  - Data Cleaning (Everyone) – Oct 15th  
-
-  - Feature Engineering (Parisa, Manqiu) – Oct 22nd 
-
-  - Model Creation and Implementation (Joe, Rochisman, Nick) – Oct 29th 
-
-  - First Draft of Mid-term report (Everyone)– Nov 7th  
-
-  - Final Draft of Mid-term report (Everyone)– Nov 14th  
-
-- Mid-point report – Nov 16th 
-
-  - Tweaking and optimizing the models (Parisa, Nick, Joe) – Nov 23rd   
-
-  - Drawing conclusions based on findings (Rochisman Manqiu) – Dec 3rd  
-
-  - First draft of final report (Everyone) – Dec 5th  
-
-- Final Project – Dec 7th  
 
 
 
