@@ -108,7 +108,7 @@ Our next step was to cluster our dataset so that we could group movies with simi
 
 This clustering analysis was performed on the entire dataset and using the PCA components (80% variance retained). We used the elbow method to pick the optimal number of clusters (10) in our K-Means algorithm. 
 
-figure>
+<figure>
   <p align="center">
     <kbd>
       <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Elbow Method Plot for K-Means Clustering.png?raw=true" width="300"/>
@@ -140,19 +140,57 @@ The random forest classification model yielded a ROC-AUC score of 0.754, which i
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/PCA Explained Variance Cumulative Sum Curve.png?raw=true" width="700"/>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Random Forest Model ROC Curve.png?raw=true" width="700"/>
     </kbd>
   </p>
-  <p align="center">PCA Explained Variance Cumulative Sum Curve</p>
+  <p align="center">Random Forest Model ROC Curve</p>
 </figure>
 
-When we ran the XG Boost model, we improved the ROC-AUC score to 0.783, which is plotted below. This improved the classification of successful movies by about 5%. The model’s accuracy is 0.721 and the precision is 0.642; while accuracy improves by about 1.5%, precision 
+When we ran the XG Boost model, we improved the ROC-AUC score to 0.783, which is plotted below. This improved the classification of successful movies by about 5%. The model’s accuracy is 0.721 and the precision is 0.642; while accuracy improves by about 1.5%, precision.
+
+<figure>
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/XG Boost Model ROC Curve.png?raw=true" width="700"/>
+    </kbd>
+  </p>
+  <p align="center">XG Boost Model ROC Curve</p>
+</figure>
 
 When we ran the Light GBM model, we improved the ROC-AUC score to 0.77, which is plotted below. This did not improve upon the XG Boost model classification. The accuracy is 0.721 and precision is 0.652, which are comparable to those of the XG Boost model. 
 
+<figure>
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/LightGBM Model ROC Curve.png?raw=true" width="700"/>
+    </kbd>
+  </p>
+  <p align="center">LightGBM Model ROC Curve</p>
+</figure>
+
+
 When we executed the Neural Network, we improved the ROC-AUC score to 0.784, which is plotted below. With an accuracy of 0.709 and precision of 0.738, we selected this model as our final model since it performed the best on the validation dataset.  
 
+<figure>
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Neural Network Validation ROC Curve.png?raw=true" width="700"/>
+    </kbd>
+  </p>
+  <p align="center">Neural Network Validation ROC Curve</p>
+</figure>
+
 Finally, we ran the neural network model on our test dataset, which yielded a ROC-AUC score of 0.812 on the test dataset.  
+
+
+<figure>
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Neural Network Test ROC Curve.png?raw=true" width="700"/>
+    </kbd>
+  </p>
+  <p align="center">Neural Network Test ROC Curve</p>
+</figure>
 
 Based on the analysis above, the ensemble methods improved upon the initial Random Forest classification model. However, the Neural Network proved to be the best at classifying successful movies as successful. 
 
@@ -171,6 +209,14 @@ As we investigated each cluster, we determined that they were approximately segr
    * Cluster_in_total_perc: ratio of the occurrences of a genre in a cluster to the total occurrence of that genre within the original dataset 
 
 
+<figure>
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Cluster Metric Table for Genres.png?raw=true" width="700"/>
+    </kbd>
+  </p>
+  <p align="center">Cluster Metric Table for Genres</p>
+</figure>
 
 To analyze the actors that appear in a cluster, we calculated the following metrics: 
 
@@ -180,15 +226,36 @@ To analyze the actors that appear in a cluster, we calculated the following metr
 
    * Vote_avg_diff_pct: percentage difference between actor_vote_avg and cluster_vote_avg 
 
-
+<figure>
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Cluster Metric Table for Actors.png?raw=true" width="700"/>
+    </kbd>
+  </p>
+  <p align="center">Cluster Metric Table for Actors</p>
+</figure>
 
 From this example, if we were to make a new science fiction movie, we could cast Sigourney Weaver because her science fiction movies perform better on average. If Weaver cannot be cast, Arnold Schwarzenegger would be the next ideal choice. 
 
 To further test our model, we ran 29 movies from 2017 through our Neural Network model. Our dataset involved movies up to 2016, so we chose 2017 to simulate predicting the success of new movies. The model predicted 72% of the movies correctly, which is displayed in the tables below. For each movie, the tables show the ground truths for vote average and the associated binary classifier. The column “Predict Prob” shows the derived likelihood that the movie is successful. Finally, we used a probability threshold of 0.50 to classify our predictions as successful or unsuccessful. 
 
+<figure>
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Successfully predicted movies.png?raw=true" width="700"/>
+    </kbd>
+  </p>
+  <p align="center">Successfully predicted movies</p>
+</figure>
 
-
-
+<figure>
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Incorrectly predicted movies.png?raw=true" width="700"/>
+    </kbd>
+  </p>
+  <p align="center">Incorrectly predicted movies</p>
+</figure>
 
 ## References
 
