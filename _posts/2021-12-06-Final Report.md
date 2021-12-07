@@ -108,7 +108,14 @@ Our next step was to cluster our dataset so that we could group movies with simi
 
 This clustering analysis was performed on the entire dataset and using the PCA components (80% variance retained). We used the elbow method to pick the optimal number of clusters (10) in our K-Means algorithm. 
 
-
+figure>
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/Elbow Method Plot for K-Means Clustering.png?raw=true" width="300"/>
+    </kbd>
+  </p>
+  <p align="center">Elbow Method Plot for K-Means Clustering</p>
+</figure>
 
 ## Results and Discussions
 
@@ -120,7 +127,7 @@ From the line chart below, we could see the relationship between number of compo
 <figure>
   <p align="center">
     <kbd>
-      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/PCA%20New.png?raw=true" width="700"/>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/PCA Explained Variance Cumulative Sum Curve.png?raw=true" width="700"/>
     </kbd>
   </p>
   <p align="center">PCA Explained Variance Cumulative Sum Curve</p>
@@ -129,6 +136,15 @@ From the line chart below, we could see the relationship between number of compo
 ### Supervised Model 
 
 The random forest classification model yielded a ROC-AUC score of 0.754, which is plotted below. This means that our model has a 75.4% chance of classifying successful movies as successful. As we look further into the confusion matrix, we determine that the model’s accuracy is 0.707 and the precision is 0.671. 
+
+<figure>
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/maqliu/maqliu.github.io-lucky13/blob/master/images/PCA Explained Variance Cumulative Sum Curve.png?raw=true" width="700"/>
+    </kbd>
+  </p>
+  <p align="center">PCA Explained Variance Cumulative Sum Curve</p>
+</figure>
 
 When we ran the XG Boost model, we improved the ROC-AUC score to 0.783, which is plotted below. This improved the classification of successful movies by about 5%. The model’s accuracy is 0.721 and the precision is 0.642; while accuracy improves by about 1.5%, precision 
 
