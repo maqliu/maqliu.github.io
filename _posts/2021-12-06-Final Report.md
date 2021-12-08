@@ -19,6 +19,7 @@ Rochisman Datta, Joe Palumbo, Parisa Davoodi, Manqiu Liu, Nicholas Gonzalez
           <li><a href="#unsupervised-model">Unsupervised Model</a></li>
       </ul>
     </li>
+    <li><a href="#conclusion">Conclusion</a></li>
     <li><a href="#references">References</a></li>
   </ol>
 </details>
@@ -171,7 +172,7 @@ When we ran the Light GBM model, we improved the ROC-AUC score to 0.77, which is
 </figure>
 
 
-When we executed the Neural Network, we improved the ROC-AUC score to 0.784, which is plotted below. With an accuracy of 0.709 and precision of 0.738, we selected this model as our final model since it performed the best on the validation dataset.  
+When we executed the Neural Network, we improved the ROC-AUC score to 0.785, which is plotted below. With an accuracy of 0.709 and precision of 0.738, we selected this model as our final model since it performed the best on the validation dataset.  
 
 <figure>
   <p align="center">
@@ -262,6 +263,13 @@ To analyze the actors that appear in a cluster, we calculated the following metr
 
 From this example, if we were to make a new science fiction movie, we could cast Sigourney Weaver because her science fiction movies perform better on average. If Weaver cannot be cast, Arnold Schwarzenegger would be the next ideal choice. 
 
+## Conclusion
+
+In this project, we investigated the use of information from movie casts, directors, production companies, and genres to predict their success through the development of supervised models. Furthermore, we experimented to gain insights from unsupervised models by investigating the relationship between the combination of casts, directors, and so on and movie success.
+
+We obtained our data from Kaggle and used the IMDB API to impute missing values in our dataset. Because almost all of the information in the dataset was qualitative, we first applied one-hot encoding to our data and obtained approximately 10k columns. To deal with the high-dimensional problem, we used PCA to reduce the dimensionality and supervised methods like Random Forest, XGBoost, and Neural Network to predict movie's success. On the test set, our best model received a ROC-AUC score of 0.81. We tested some new movies outside of our dataset and got 72.4 percent accuracy on a completely new test set. We also created an unsupervised model using K-Means to investigate the similarities between movies and experimented with providing cast recommendations to help a film succeed.
+
+Our future research would concentrate on feature engineering methods. Instead of encoding all of the casts, directors, genres, and company names all at once, we could experiment with combinations of those information and also try to encode them with their own evaluations to reduce the dimensionality.
 
 ## References
 
