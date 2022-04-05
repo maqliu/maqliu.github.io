@@ -1,14 +1,13 @@
-这是一个可 fork 的博客模板仓库，帮助你快速搭建自己的博客，可以参考我博客的[这篇文章]( https://lemonchann.github.io/create_blog_with_github_pages/ )详细指导搭建步骤。
+This is for holding a site for our CS 7641 Machine Learning project: 
 
-### 文章版权
+The choice of movie components – director, genre, cast, run-time – determine the success of a movie. An improper combination of these factors could lead to box office flops. Despite its highly anticipated release, why did Blade Runner 2049 fall short of public expectations2?
 
-`_posts` 文件夹内所有文章版权归我所有，转载需联系我获得授权。
+We believe that a combination of features could be optimized to yield the highest movie rating and box office revenue. These choices could help drive the movie making process.
 
-### 致谢
+Here to find our project details:
 
-感谢Jekyll主题[LOFFER](https://fromendworld.github.io/LOFFER/)模提供了原始主题模板，我在其上进行的二次开发。
+Our proposal: https://maqliu.github.io/maqliu.github.io-lucky13/Proposal/
 
-如果搭建过程中有什么问题，也可以在我的个人技术公众号「后端技术学堂」讨论交流，扫码添加。
+Midterm Report: https://maqliu.github.io/maqliu.github.io-lucky13/Progress/
 
-![公众号二维码](https://github.com/lemonchann/images/raw/master/gzh/%E6%96%87%E6%9C%AB%E6%8E%A8%E5%B9%BF%E6%96%87%E6%A1%88.png)
-
+Final Report: https://maqliu.github.io/maqliu.github.io-lucky13/Final-Report/
